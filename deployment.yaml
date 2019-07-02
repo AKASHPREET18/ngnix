@@ -33,3 +33,4 @@ spec:
         image: apreet/myngnix
         ports:
         - containerPort: 3000
+---
