@@ -27,6 +27,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: apreet/ngnix
+        image: apreet/myngnix
         ports:
         - containerPort: 3000
