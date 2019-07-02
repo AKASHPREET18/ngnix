@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ngnix-service
-  namespace: myngnix
+  namespace: mynginx
   labels:
     app: app
 spec:
