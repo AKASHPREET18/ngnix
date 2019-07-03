@@ -19,7 +19,6 @@ kind: Deployment
 metadata:
   name: telenor-react-deployment
   labels:
-  namespace: mynginx
 spec:
   replicas: 2
   template:
