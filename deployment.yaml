@@ -18,6 +18,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: nginx-deployment
+  namespace: myinginx
 spec:
   replicas: 2
   template:
