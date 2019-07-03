@@ -4,7 +4,6 @@ kind: Service
 metadata:
   name: mynginx
   labels:
-  namespace: mynginx
     app: app
 spec:
   type: NodePort
@@ -19,6 +18,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: nginx-deployment
+  namespace: mynginx
 spec:
   replicas: 2
   template:
