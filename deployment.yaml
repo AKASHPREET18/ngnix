@@ -18,7 +18,6 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: telenor-react-deployment
-  namespace: mynginx
 spec:
   replicas: 2
   template:
