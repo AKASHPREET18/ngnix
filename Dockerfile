@@ -1,5 +1,4 @@
-FROM node:9.4
-WORKDIR /usr/src/app
-COPY /docs/html/ ./
-ADD /docs/html/ /usr/src/app/
-EXPOSE 3000
+FROM nginx:latest
+ADD https://github.com/AKASHPREET18/k8s.git/docs/index.html /usr/share/nginx/html/index.html
+RUN chmod +r /usr/share/nginx/html/
+CMD ["nginx", "-g", "daemon off;"]
