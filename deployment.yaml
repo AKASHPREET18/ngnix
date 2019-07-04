@@ -14,4 +14,4 @@ spec:
       - name: telenor-react
         image: apreet/telenor-react
         ports:
-        - containerPort: 3000
+        - containerPort: 80
