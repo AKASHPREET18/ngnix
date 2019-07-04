@@ -8,10 +8,10 @@ spec:
   template:
     metadata:
       labels:
-        app: app
+        app: telenor-react-deployment 
     spec:
       containers:
       - name: telenor-react
         image: apreet/telenor-react
         ports:
-        - containerPort: 80
+        - containerPort: 80apiVersion: v1
