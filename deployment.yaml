@@ -12,6 +12,6 @@ spec:
     spec:
       containers:
       - name: telenor-react
-        image: apreet/telenor-react
+        image: apreet/telenor-react1
         ports:
         - containerPort: 80
