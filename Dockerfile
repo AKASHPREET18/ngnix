@@ -1,4 +1,5 @@
 FROM centos:latest
+MAINTAINER AAKASH/PRATIK/MUSTAFA
 RUN yum -y install httpd
 ADD https://raw.githubusercontent.com/AKASHPREET18/ngnix/master/index.html /var/www/html/
 RUN chmod 777 -R /var/www/html/index.html
