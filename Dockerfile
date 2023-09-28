@@ -1,6 +1,6 @@
-FROM centos:latest
+FROM httpd:latest
 MAINTAINER AAKASH
-RUN yum install httpd -y
+#RUN yum install httpd -y
 ADD https://raw.githubusercontent.com/AKASHPREET18/ngnix/master/index.html /var/www/html/
 RUN chmod 777 -R /var/www/html/index.html
 #RUN chmod +r /usr/share/nginx/index.html
