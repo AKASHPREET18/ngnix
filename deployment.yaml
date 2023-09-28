@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: telenor-react-deployment
@@ -15,3 +15,14 @@ spec:
         image: apreet/telenor-react1
         ports:
         - containerPort: 80
+        
+apiVersion: v1
+kind: telenor-react-deployment
+metadata:
+    name: telenor-react-deployment
+spec:
+    type: LoadBalancer
+    ports:
+    - port: 80 
+    selector:
+        app: telenor-react-deployment
