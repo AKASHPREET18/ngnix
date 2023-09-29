@@ -15,7 +15,7 @@ variables:
   containerRegistry: 'devopstri.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: 'latest'
-  imagePullSecret: 'Image-Pull-Secret'
+  imagePullSecret: 'imagepullsecret'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
