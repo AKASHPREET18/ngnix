@@ -17,7 +17,7 @@ spec:
         - containerPort: 80
         
 apiVersion: v1
-kind: telenor-react-deployment
+kind: service
 metadata:
     name: telenor-react-deployment
 spec:
