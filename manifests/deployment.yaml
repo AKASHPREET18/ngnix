@@ -15,6 +15,7 @@ spec:
       containers:
       - name: telenor-react
         image: akashpreetngnix:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
 ---
