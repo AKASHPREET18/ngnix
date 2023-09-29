@@ -1,14 +1,14 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: telenor-react-deployment
+  name: telenor-react
   labels:
 spec:
   replicas: 2
   template:
     metadata:
       labels:
-        app: telenor-react-deployment 
+        app: telenor-react
     spec:
       containers:
       - name: telenor-react
@@ -20,10 +20,10 @@ spec:
 apiVersion: v1
 kind: service
 metadata:
-    name: telenor-react-deployment
+    name: telenor-react
 spec:
     type: LoadBalancer
     ports:
     - port: 80 
     selector:
-        app: telenor-react-deployment
+        app: telenor-react
