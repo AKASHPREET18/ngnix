@@ -15,7 +15,8 @@ spec:
         image: akashpreetngnix:latest
         ports:
         - containerPort: 80
-        
+---
+
 apiVersion: v1
 kind: service
 metadata:
